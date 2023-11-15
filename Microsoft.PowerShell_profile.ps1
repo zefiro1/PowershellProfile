@@ -1,4 +1,4 @@
-oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\dracula.omp.json" | Invoke-Expression
+oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\zash.omp.json" | Invoke-Expression
 
 
 "
@@ -12,5 +12,6 @@ oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\dracula.omp.json" | Invoke-
 "
 
 Import-Module -Name Terminal-Icons
+Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
 
  
